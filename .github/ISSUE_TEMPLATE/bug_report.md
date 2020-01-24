@@ -1,38 +1,25 @@
 ---
-name: Bug report
+name: BugReport
 about: Create a report to help us improve
 title: ''
-labels: ''
+labels: 'Bug'
 assignees: ''
 
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+<!--
+Please keep the below portion in your issue. Your issue will be closed if any of the boxes is not checked (i.e., replace `[ ]` by `[x]`).
+-->
 
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+---
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+By filing an issue to this repo, I promise that
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+- [ ] I have provided the necessary information about my bug report
+    + A minimal, self-contained, and reproducible example
+    + The output from `xfun::session_info('runes')`. 
+- [ ] I have upgraded all my packages to their latest versions (e.g., **R**, **RStudio**, and R **packages**)
+- [ ] If I have posted the same issue elsewhere, I have also mentioned it in this issue.
+- [ ] I have learned the Github Markdown syntax, and formatted my issue correctly.
 
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
-
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
-
-**Additional context**
-Add any other context about the problem here.
+I understand that my issue may be closed if I don't fulfill my promises.

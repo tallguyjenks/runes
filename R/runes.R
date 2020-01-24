@@ -15,9 +15,7 @@
 #' @examples
 #' cat(runes("Your Results Are: "), 7 * 49, "\n")
 #'
-#' \dontrun{
 #' runes("hello world")
-#' }
 runes <- function(x){
 
     base::stopifnot(base::class(x)==base::class("character"))

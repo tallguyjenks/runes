@@ -2,7 +2,7 @@
 % Please edit documentation in R/runes.R
 \name{runes}
 \alias{runes}
-\title{Elder Futhark Runes in \code{R}!}
+\title{Elder Futhark Runes in \code{R}}
 \usage{
 runes(x)
 }

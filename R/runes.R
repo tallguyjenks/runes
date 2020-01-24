@@ -1,5 +1,5 @@
 #' @title
-#' Elder Futhark Runes in `R`!
+#' Elder Futhark Runes in `R`
 #'
 #' @description
 #' `runes()` returns the input string argument with all 'A-Z' characters

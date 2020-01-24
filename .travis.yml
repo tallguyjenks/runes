@@ -1,6 +1,1 @@
 language: r
-git:
-    quiet: true
-    branches:
-        only:
-            master

@@ -1,3 +1,23 @@
+#' @title
+#' Elder Futhark Runes in `R`!
+#'
+#' @description
+#' `runes()` returns the input string argument with all 'A-Z' characters
+#' replaced by Elder Futhark Runes. You can use this in console output, scripts,
+#' RMarkdown documents, anything with Unicode/UTF-8 support
+#'
+#' @param x a character string
+#'
+#' @return If input is a single character string then output will be a character
+#' string with unicode Elder Futhark runes replacing the 'A-Z' characters except
+#' 'q' and 'x'
+#'
+#' @examples
+#' cat(runes("Your Results Are: "), 7 * 49, "\n")
+#'
+#' \dontrun{
+#' runes("hello world")
+#' }
 runes <- function(x){
 
     base::stopifnot(base::class(x)==base::class("character"))

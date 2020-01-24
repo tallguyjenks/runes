@@ -2,8 +2,6 @@
 runes - ᚱᚢᚾᛖᛋ
 </h1>
 
----
-
 > Ever wanted elder futhark runes in your R Documents? Of course you did! so here's a package that gives you that!
 
 [![Build Status](https://travis-ci.org/tallguyjenks/runes.svg?branch=master)](https://travis-ci.org/tallguyjenks/runes)
@@ -14,21 +12,15 @@ runes - ᚱᚢᚾᛖᛋ
 
 ## Dependencies
 
----
-
 - <u>None:</u> Relies only on **base** functions.
 
 ## Installation
-
----
 
 ```r
 devtools::install_github("tallguyjenks/runes")
 ```
 
 ## Usage
-
----
 
 ```r
 library(runes)
@@ -44,24 +36,16 @@ runes("hello world!")
 
 ## How to Contribute
 
----
-
 1. Clone repo and create a new branch.
 2. Make changes and test
 3. Submit Pull Request with comprehensive description of changes
 
 ## Acknowledgements
 
----
-
 ## Donations
-
----
 
 This is free, open-source software. If you'd like to support the development of future projects, or say thanks for this one, you can donate to me through [paypal](https://www.paypal.me/tallguyjenks)
 
 ## License
-
----
 
 MIT

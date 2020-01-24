@@ -1,0 +1,15 @@
+Package: runes
+Title: Convert Strings to Elder Futhark Runes
+Version: 0.0.1
+Authors@R: 
+    person(given = "Bryan",
+           family = "Jenks",
+           role = c("aut", "cre"),
+           email = "bryanjenks@protonmail.com",
+           comment = c(ORCID = "0000-0002-9604-3069"))
+Description: Convert a string of text characters to Elder Futhark Runes through regular expressions.
+License: file LICENSE
+Encoding: UTF-8
+LazyData: true
+Suggests: 
+    testthat (>= 2.1.0)

@@ -36,7 +36,7 @@ runes("hello world!")
 
 ## How to Contribute
 
-1. Read <a target="_blank" href=".CONTRIBUTING.md">CONTRIBUTING.md</a>
+1. Read <a target="_blank" href="./CONTRIBUTING.md">CONTRIBUTING.md</a>
 2. Clone repo and create a new branch.
 3. Make changes and test
 4. Submit Pull Request with comprehensive description of changes
@@ -51,8 +51,7 @@ This is free, open-source software. If you'd like to support the development of 
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick" />
 <input type="hidden" name="hosted_button_id" value="FDTVYZD3VS4DY" />
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" /><img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
 </form>
 
 <!-- Buy me a coffee -->

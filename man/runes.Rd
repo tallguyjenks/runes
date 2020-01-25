@@ -23,4 +23,5 @@ RMarkdown documents, anything with Unicode/UTF-8 support
 cat(runes("Your Results Are: "), 7 * 49, "\n")
 
 runes("hello world")
+
 }

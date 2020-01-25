@@ -1,3 +1,9 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
-^\.travis\.yaml$
+^\.travis\.yml$
+^CHANGELOG.md$
+^CONTRIBUTING.md$
+^img$
+^\.gitignore$
+^README.md$
+^\.github$

@@ -16,6 +16,8 @@
 #' cat(runes("Your Results Are: "), 7 * 49, "\n")
 #'
 #' runes("hello world")
+#'
+#' @export
 runes <- function(x){
 
     base::stopifnot(base::class(x)==base::class("character"))

@@ -2,7 +2,7 @@
 runes - ᚱᚢᚾᛖᛋ
 </h1>
 
-> Ever wanted elder futhark runes in your R Documents? Of course you did! so here's a package that gives you that!
+> Ever wanted Elder Futhark runes in your R Documents? Of course you did! so here's a package that gives you that!
 
 [![Build Status](https://travis-ci.org/tallguyjenks/runes.svg?branch=master)](https://travis-ci.org/tallguyjenks/runes)
 
@@ -37,7 +37,7 @@ runes("hello world!")
 ## How to Contribute
 
 1. Read <a target="_blank" href="./CONTRIBUTING.md">CONTRIBUTING.md</a>
-2. Clone repo and create a new branch.
+2. Clone repository and create a new branch.
 3. Make changes and test
 4. Submit Pull Request with comprehensive description of changes
 

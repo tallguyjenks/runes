@@ -1,6 +1,6 @@
 Package: runes
 Title: Convert Strings to Elder Futhark Runes
-Version: 0.0.1
+Version: 0.0.2
 Authors@R: 
     person(given = "Bryan",
            family = "Jenks",

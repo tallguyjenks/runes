@@ -2,12 +2,15 @@
 % Please edit documentation in R/runes.R
 \name{runes}
 \alias{runes}
-\title{Elder Futhark Runes in \code{R}}
+\title{runes()}
 \usage{
-runes(x)
+runes(x, hide = FALSE)
 }
 \arguments{
 \item{x}{a character string}
+
+\item{hide}{boolean option to hide non translated english alphabet
+characters from output. Default option hides nothing from user}
 }
 \value{
 If input is a single character string then output will be a character

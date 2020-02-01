@@ -1,15 +1,3 @@
----
-title: "CHANGELOG"
-output:
-  html_document:
-    highlight: zenburn
-    theme: darkly
-    toc: yes
-    toc_depth: 6
-    toc_float: yes
----
-
-
 # Changelog
 
 All notable changes to this project will be documented in this file.
@@ -72,11 +60,39 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -
 
-## [0.0.0] - 2020-01-22
+## [0.0.2] - 2020-01-22
 
 ### Added
 
+- new parameter to `runes()` `hide=FALSE` is now the default option but when set to true, the english 'x' & 'q' characters will not pass through the function and appear at all since there is no equivalent rune.
+- added unit tests to support this new parameter option
+
+### Changed
+
 -
+
+### Deprecated
+
+-
+
+### Removed
+
+-
+
+### Fixed
+
+-
+
+### Security
+
+-
+
+## [0.0.1] - 2020-01-22
+
+### Added
+
+- Core functionality of a-z alhpabet translation to elder futhark
+- all special characters, numeric, or otherwise all ignored as pass through
 
 ### Changed
 

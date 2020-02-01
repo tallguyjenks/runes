@@ -1,5 +1,5 @@
 #' @title
-#' Elder Futhark Runes in `R`
+#' runes()
 #'
 #' @description
 #' `runes()` returns the input string argument with all 'A-Z' characters
@@ -7,6 +7,9 @@
 #' RMarkdown documents, anything with Unicode/UTF-8 support
 #'
 #' @param x a character string
+#'
+#' @param hide boolean option to hide non translated english alphabet
+#' characters from output. Default option hides nothing from user
 #'
 #' @return If input is a single character string then output will be a character
 #' string with unicode Elder Futhark runes replacing the 'A-Z' characters except
@@ -18,9 +21,9 @@
 #' runes("hello world")
 #'
 #' @export
-runes <- function(x){
+runes <- function(x, hide=FALSE) {
 
-    base::stopifnot(base::class(x)==base::class("character"))
+    base::stopifnot(base::class(x) == base::class("character"))
 
         input_string <- base::tolower(x)
 
@@ -42,10 +45,12 @@ runes <- function(x){
         output_string <- base::gsub(pattern = "n", x = output_string, replacement = "\u16be")
         output_string <- base::gsub(pattern = "o", x = output_string, replacement = "\u16df")
         output_string <- base::gsub(pattern = "p", x = output_string, replacement = "\u16c8")
+        output_string <- base::gsub(pattern = "q", x = output_string, replacement = if (hide) {""} else {"q"})
         output_string <- base::gsub(pattern = "r", x = output_string, replacement = "\u16b1")
         output_string <- base::gsub(pattern = "s", x = output_string, replacement = "\u16cb")
         output_string <- base::gsub(pattern = "t", x = output_string, replacement = "\u16cf")
         output_string <- base::gsub(pattern = "u", x = output_string, replacement = "\u16a2")
+        output_string <- base::gsub(pattern = "x", x = output_string, replacement = if (hide) {""} else {"x"})
         output_string <- base::gsub(pattern = "z", x = output_string, replacement = "\u16c9")
 
     return(output_string)

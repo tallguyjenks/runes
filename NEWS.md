@@ -60,10 +60,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -
 
-## [0.0.2] - 2020-01-22
+## [0.0.1] - 2020-01-22
 
 ### Added
 
+- Core functionality of a-z alhpabet translation to elder futhark
+- all special characters, numeric, or otherwise all ignored as pass through
 - New function `runes_table()` create a 3 column data frame with the unicode sequence, transcription, and character of the entire elder futhark alphabet to be used for inputting into doucments, reference, or any other purpose
 
 ### Changed
@@ -87,29 +89,3 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -
 
-## [0.0.1] - 2020-01-22
-
-### Added
-
-- Core functionality of a-z alhpabet translation to elder futhark
-- all special characters, numeric, or otherwise all ignored as pass through
-
-### Changed
-
--
-
-### Deprecated
-
--
-
-### Removed
-
--
-
-### Fixed
-
--
-
-### Security
-
--

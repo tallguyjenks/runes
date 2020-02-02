@@ -3,10 +3,13 @@
 * Arch Linux x86_64
     + Kernal: 5.4.10-arch1-1
 * Ubuntu 16.04 (on travis-ci), R 3.6.2
+* win-builder (devel)
 
 ## R CMD check results
 
-There were no ERRORs, NOTEs, or WARNINGs. 
+* There were no ERRORs, NOTEs, or WARNINGs. 
+* win-builder note = "checking CRAN incoming feasibility"
+* Also in win-builder noted spelling issue in DESCRIPTION, _Futhark_ is the correct spelling.
 
 ## Downstream dependencies
 

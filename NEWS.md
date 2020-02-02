@@ -64,13 +64,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- new parameter to `runes()` `hide=FALSE` is now the default option but when set to true, the english 'x' & 'q' characters will not pass through the function and appear at all since there is no equivalent rune.
-- added unit tests to support this new parameter option
+- New function `runes_table()` create a 3 column data frame with the unicode sequence, transcription, and character of the entire elder futhark alphabet to be used for inputting into doucments, reference, or any other purpose
 
 ### Changed
 
--
-
+- new parameter to `runes()` `hide=FALSE` is now the default option but when set to true, the english 'x' & 'q' characters will not pass through the function and appear at all since there is no equivalent rune.
+    + added unit tests to support this new parameter option
+    
 ### Deprecated
 
 -
@@ -113,4 +113,3 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Security
 
 -
-

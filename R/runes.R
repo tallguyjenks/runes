@@ -8,7 +8,7 @@
 #'
 #' @param x a character string
 #'
-#' @param hide boolean option to hide non translated english alphabet
+#' @param hide boolean option to hide non translated English alphabet
 #' characters from output. Default option hides nothing from user
 #'
 #' @return If input is a single character string then output will be a character

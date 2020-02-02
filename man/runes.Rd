@@ -9,7 +9,7 @@ runes(x, hide = FALSE)
 \arguments{
 \item{x}{a character string}
 
-\item{hide}{boolean option to hide non translated english alphabet
+\item{hide}{boolean option to hide non translated English alphabet
 characters from output. Default option hides nothing from user}
 }
 \value{

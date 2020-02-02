@@ -10,10 +10,10 @@ runes_table()
 \code{runes_table()} returns a data.frame with 3 variable text columns.AX
 }
 \details{
-The data.frame returned by this funtion returns 3 columns
+The data.frame returned by this function returns 3 columns
 \enumerate{
-\item The unicode characer that represents the rune character.
-\item The English a-z characters of the alhpabet
+\item The unicode sequence that represents the rune character.
+\item The English a-z characters of the alphabet
 \item The rune itself showing how it would also be displayed.
 }
 }

@@ -5,9 +5,9 @@
 #' `runes_table()` returns a data.frame with 3 variable text columns.AX
 #'
 #' @details
-#' The data.frame returned by this funtion returns 3 columns
-#' 1. The unicode characer that represents the rune character.
-#' 2. The English a-z characters of the alhpabet
+#' The data.frame returned by this function returns 3 columns
+#' 1. The unicode sequence that represents the rune character.
+#' 2. The English a-z characters of the alphabet
 #' 3. The rune itself showing how it would also be displayed.
 #'
 #' @examples

@@ -12,7 +12,7 @@ I did not find a package in R that does this so i made it myself, so if you work
 
 ## What Does It Look Like?
 
-![](./img/rstudio.gif)
+[](https://media.giphy.com/media/U7ywWTCYF0aGdth9ui/giphy.gif)
 
 ## Dependencies
 

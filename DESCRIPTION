@@ -7,8 +7,9 @@ Authors@R:
            role = c("aut", "cre"),
            email = "bryanjenks@protonmail.com",
            comment = c(ORCID = "0000-0002-9604-3069"))
-Description: Convert a string of text characters to Elder Futhark Runes.
-License: file LICENSE
+Description: Convert a string of text characters to Elder Futhark Runes <https://en.wikipedia.org/wiki/Elder_Futhark>.
+BugReports: https://github.com/tallguyjenks/runes
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Suggests: 

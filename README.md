@@ -4,8 +4,15 @@ runes - ᚱᚢᚾᛖᛋ
 
 > Ever wanted Elder Futhark runes in your R Documents? Of course you did! so here's a package that gives you that!
 
-[![Build Status](https://travis-ci.org/tallguyjenks/runes.svg?branch=master)](https://travis-ci.org/tallguyjenks/runes)
 
+[![Build Status](https://travis-ci.org/tallguyjenks/runes.svg?branch=master)](https://travis-ci.org/tallguyjenks/runes)
+[![CRAN checks](https://cranchecks.info/badges/summary/runes)](https://cran.r-project.org/web/checks/check_results_runes.html)
+[![](https://www.r-pkg.org/badges/version/runes?color=orange)](https://cran.r-project.org/package=runes)
+[![](http://cranlogs.r-pkg.org/badges/grand-total/runes?color=blue)](https://cran.r-project.org/package=runes)
+[![](http://cranlogs.r-pkg.org/badges/last-month/runes?color=blue)](https://cran.r-project.org/package=runes)
+[![](http://cranlogs.r-pkg.org/badges/last-week/runes?color=blue)](https://cran.r-project.org/package=runes)
+
+ 
 runes is a package to convert English _A-Z_ characters to Elder Futhark Runes. There is a LaTeX package to do this with RMarkdown, but why not make it easier and more intuitive to get the runes you need when you need them? `runes("any string or vector here")` works as you'd expect.
 
 I did not find a package in R that does this so i made it myself, so if you work with old Germanic runes for linguistic purposes or just really like runes like me, hopefully this will be a package you will get some use out of.

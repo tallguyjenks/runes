@@ -1,5 +1,5 @@
 <h1 align="center">
-runes - ᚱᚢᚾᛖᛋ
+runes - ᚱᚢᚾᛖᛋ <img src="img/hex.png" align="right" /style="width: 150px; height: auto;"/>
 </h1>
 
 > Ever wanted Elder Futhark runes in your R Documents? Of course you did! so here's a package that gives you that!

@@ -9,4 +9,3 @@ hexSticker::sticker(here::here("img","runes.png"), # the logo i have on the imag
         p_color = "#ebdbb2",                       # Package Name Forground color
         h_color = "#b8bb26"                        # Hex border color
         )
-

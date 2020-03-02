@@ -12,6 +12,8 @@ runes - ᚱᚢᚾᛖᛋ <img src="img/tinyhex.png" align="right">
 [![](http://cranlogs.r-pkg.org/badges/last-month/runes?color=blue)](https://cran.r-project.org/package=runes)
 [![](http://cranlogs.r-pkg.org/badges/last-week/runes?color=blue)](https://cran.r-project.org/package=runes)
 
+[![](https://img.shields.io/badge/RDocumentation-0.0.1-blue)](https://www.rdocumentation.org/packages/runes/versions/0.0.1)
+[![DOI](https://zenodo.org/badge/235950397.svg)](https://zenodo.org/badge/latestdoi/235950397)
  
 runes is a package to convert English _A-Z_ characters to Elder Futhark Runes. There is a LaTeX package to do this with RMarkdown, but why not make it easier and more intuitive to get the runes you need when you need them? `runes("any string or vector here")` works as you'd expect.
 

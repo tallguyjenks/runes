@@ -2,7 +2,7 @@ Year <- sub("-.*", "", meta$Date)
 Note <- sprintf("R package version %s", meta$Version)  
 bibentry(bibtype = "Manual",          
          title = "{runes}: Convert Strings to Elder Futhark Runes",          
-         author = person("Bryan","Jenks")        
+         author = person("Bryan","Jenks"), 
          year = Year,          
          note = Note,          
          url = "http://CRAN.R-project.org/package=runes",

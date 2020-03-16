@@ -42,9 +42,15 @@ runes <- function(x, futhark="elder", branch=NA, hide=FALSE) {
     # TODO document branch param
 
     # Make sure that argument data types are what they should be
-    base::stopifnot(base::class(x) == base::class("character"))
-    base::stopifnot(base::class(futhark) == base::class("character"))
-    base::stopifnot(base::class(hide) == base::class(TRUE))
+    if (base::class(x) != base::class("character")) {
+        stop("test to be converted is not a string")
+    } else if (base::class(futhark) != base::class("character")) {
+        stop("futhark name is not a string")
+    } else if (base::class(hide) != base::class(TRUE)) {
+        stop("Hide option is not a boolean TRUE or FALSE")
+    } else if (base::class(branch) != class("Character") || is.na(branch)) {
+        stop("Your branch option is not a string 'short' or 'long'")
+    }
 
     input_string <- x
 
@@ -62,7 +68,8 @@ runes <- function(x, futhark="elder", branch=NA, hide=FALSE) {
        output_string <- base::gsub(pattern = "c", x = output_string, replacement = if (hide) {""} else {"c"})
        output_string <- base::gsub(pattern = "C", x = output_string, replacement = if (hide) {""} else {"C"})
        output_string <- base::gsub(pattern = "[dD]", x = output_string, replacement = "\u16de")
-       output_string <- base::gsub(pattern = "[eE]", x = output_string, replacement = "\u16d6")       output_string <- base::gsub(pattern = "[fF]", x = output_string, replacement = "\u16a0")
+       output_string <- base::gsub(pattern = "[eE]", x = output_string, replacement = "\u16d6")
+       output_string <- base::gsub(pattern = "[fF]", x = output_string, replacement = "\u16a0")
        output_string <- base::gsub(pattern = "[gG]", x = output_string, replacement = "\u16b7")
        output_string <- base::gsub(pattern = "[hH]", x = output_string, replacement = "\u16bb")
        output_string <- base::gsub(pattern = "[iI]", x = output_string, replacement = "\u16c1")
@@ -178,8 +185,8 @@ runes <- function(x, futhark="elder", branch=NA, hide=FALSE) {
        output_string <- base::gsub(pattern = "z", x = output_string, replacement = if (hide) {""} else {"z"})
        output_string <- base::gsub(pattern = "Z", x = output_string, replacement = if (hide) {""} else {"Z"})
 
-   }
+   } # End IF statement
 
     return(output_string)
 
-   }
+} # End Function

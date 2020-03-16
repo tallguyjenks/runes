@@ -2,11 +2,17 @@
 #' runes()
 #'
 #' @description
-#' `runes()` returns the input string argument with all 'A-Z' characters
-#' replaced by Elder Futhark Runes. You can use this in console output, scripts,
-#' RMarkdown documents, anything with Unicode/UTF-8 support
+#' `runes()` Converts alpha characters a-z/A-Z to runes. You can use this in
+#' console output, scripts, RMarkdown documents, anything with Unicode/UTF-8
+#' support.
 #'
 #' @param x a character string
+#'
+#' @param futhark default is "elder" for elder futhark runes, the other option
+#' is "younger" futhark
+#'
+#' @param branch default is "NA" but when "younger" futhark is chosen you must
+#' specify a branch, either "short" or "long"
 #'
 #' @param hide boolean option to hide non translated English alphabet
 #' characters from output. Default option hides nothing from user
@@ -20,10 +26,15 @@
 #'
 #' runes("hello world")
 #'
+#' runes(x = "hello world", futhark = "elder", hide = TRUE)
+#'
+#' runes(x = "hello world", futhark = "younger", branch = "long", hide = TRUE)
+#'
+#' runes(x = "hello world", futhark = "younger", branch = "short", hide = FALSE)
+#'
 #' @export
 runes <- function(x, futhark="elder", branch=NA, hide=FALSE) {
 
-    # TODO add roxygen updates for new parameters and functionality
     # TODO add new supporting unit tests
     # TODO update changelog for all of these changes
     # TODO update DESCRIPTION with new version.
@@ -51,8 +62,7 @@ runes <- function(x, futhark="elder", branch=NA, hide=FALSE) {
        output_string <- base::gsub(pattern = "c", x = output_string, replacement = if (hide) {""} else {"c"})
        output_string <- base::gsub(pattern = "C", x = output_string, replacement = if (hide) {""} else {"C"})
        output_string <- base::gsub(pattern = "[dD]", x = output_string, replacement = "\u16de")
-       output_string <- base::gsub(pattern = "[eE]", x = output_string, replacement = "\u16d6")
-       output_string <- base::gsub(pattern = "[fF]", x = output_string, replacement = "\u16a0")
+       output_string <- base::gsub(pattern = "[eE]", x = output_string, replacement = "\u16d6")       output_string <- base::gsub(pattern = "[fF]", x = output_string, replacement = "\u16a0")
        output_string <- base::gsub(pattern = "[gG]", x = output_string, replacement = "\u16b7")
        output_string <- base::gsub(pattern = "[hH]", x = output_string, replacement = "\u16bb")
        output_string <- base::gsub(pattern = "[iI]", x = output_string, replacement = "\u16c1")
@@ -120,8 +130,8 @@ runes <- function(x, futhark="elder", branch=NA, hide=FALSE) {
        output_string <- base::gsub(pattern = "X", x = output_string, replacement = if (hide) {""} else {"X"})
        output_string <- base::gsub(pattern = "y", x = output_string, replacement = if (hide) {""} else {"y"})
        output_string <- base::gsub(pattern = "Y", x = output_string, replacement = if (hide) {""} else {"y"})
-       output_string <- base::gsub(pattern = "v", x = output_string, replacement = if (hide) {""} else {"z"})
-       output_string <- base::gsub(pattern = "V", x = output_string, replacement = if (hide) {""} else {"Z"})
+       output_string <- base::gsub(pattern = "z", x = output_string, replacement = if (hide) {""} else {"z"})
+       output_string <- base::gsub(pattern = "Z", x = output_string, replacement = if (hide) {""} else {"Z"})
 
    } else if (futhark == "younger" && branch == "short") {
 

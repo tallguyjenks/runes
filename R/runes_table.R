@@ -125,7 +125,7 @@ Character <- c(
   ,NA # X
   ,NA # Y
   ,"\u16c9") # Algiz
-} else if (futhark == "yonuger" && branch == "short") {
+} else if (futhark == "younger" && branch == "short") {
 
 Character <- c(
 "\u16a6" # Thorisaz

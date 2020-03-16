@@ -4,10 +4,16 @@
 \alias{runes}
 \title{runes()}
 \usage{
-runes(x, hide = FALSE)
+runes(x, futhark = "elder", branch = NA, hide = FALSE)
 }
 \arguments{
 \item{x}{a character string}
+
+\item{futhark}{default is "elder" for elder futhark runes, the other option
+is "younger" futhark as a string argument}
+
+\item{branch}{default is "NA" but when "younger" futhark is chosen you must
+specify a branch, either "short" or "long" as a string argument}
 
 \item{hide}{boolean option to hide non translated English alphabet
 characters from output. Default option hides nothing from user}
@@ -18,13 +24,19 @@ string with unicode Elder Futhark runes replacing the 'A-Z' characters except
 'q' and 'x'
 }
 \description{
-\code{runes()} returns the input string argument with all 'A-Z' characters
-replaced by Elder Futhark Runes. You can use this in console output, scripts,
-RMarkdown documents, anything with Unicode/UTF-8 support
+\code{runes()} Converts alpha characters a-z/A-Z to runes. You can use this in
+console output, scripts, RMarkdown documents, anything with Unicode/UTF-8
+support.
 }
 \examples{
 cat(runes("Your Results Are: "), 7 * 49, "\n")
 
 runes("hello world")
+
+runes(x = "hello world", futhark = "elder", hide = TRUE)
+
+runes(x = "hello world", futhark = "younger", branch = "long", hide = TRUE)
+
+runes(x = "hello world", futhark = "younger", branch = "short", hide = FALSE)
 
 }

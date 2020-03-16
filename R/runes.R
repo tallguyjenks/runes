@@ -9,10 +9,10 @@
 #' @param x a character string
 #'
 #' @param futhark default is "elder" for elder futhark runes, the other option
-#' is "younger" futhark
+#' is "younger" futhark as a string argument
 #'
 #' @param branch default is "NA" but when "younger" futhark is chosen you must
-#' specify a branch, either "short" or "long"
+#' specify a branch, either "short" or "long" as a string argument
 #'
 #' @param hide boolean option to hide non translated English alphabet
 #' characters from output. Default option hides nothing from user
@@ -39,7 +39,6 @@ runes <- function(x, futhark="elder", branch=NA, hide=FALSE) {
     # TODO update changelog for all of these changes
     # TODO update DESCRIPTION with new version.
     # TODO double check all files and update necessary items
-    # TODO document branch param
 
     # Make sure that argument data types are what they should be
     if (base::class(x) != base::class("character")) {

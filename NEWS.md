@@ -33,16 +33,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 > Removed for now removed features.
 > Fixed for any bug fixes.
 > Security in case of vulnerabilities.
+## [Unreleased]
 
 ## [Unreleased]
 
 ### Added
 
--
+- 
 
 ### Changed
 
--
+- 
 
 ### Deprecated
 
@@ -50,7 +51,39 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Removed
 
+- 
+
+### Fixed
+
 -
+
+### Security
+
+-
+
+## [0.1.0] - 2020-03-15
+
+### Added
+
+- Unit tests for new `runes()` futhark argument option
+- New param for the `runes()` funtion to determine which futhark set to use
+- Forgotten runes Eiwaz conversion added in
+- New 'branch' argument for younger futhark runes to pick either long branch or short twig younger futhark runes [Younger Futhark](https://en.wikipedia.org/wiki/Younger_Futhark)
+- Younger futhark rune translations
+- `runes_table()` now has `futhark` and `branch` arguments so you can differentiate which translation table you'd like be it elder, younger-short, or younger-long
+
+### Changed
+
+- Added new function options to `runes()` it will now accept a new arguement "futhark" which defaults to "elder" to maintain prior functionality but now different futhark rune sets can be chosen such as younger futhark
+- fixed character conversion for the elder furthark set, some conversions like nh for inguaz are actually linked to a unicode character not a dual character ascii 'ng', the same goes for 'th' which is the thorisaz runes and now requires the unicode character to be translated into that character again where as 'th' will translate to Tiwaz and Hagalaz
+
+### Deprecated
+
+-
+
+### Removed
+
+- Removed the internal `tolower()` functionality as some rune sets have case sensitive conversions and with regex the case wont matter for the other sets if [aA] is used for 'A' in the elder sets
 
 ### Fixed
 
@@ -72,7 +105,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - new parameter to `runes()` `hide=FALSE` is now the default option but when set to true, the English 'x' & 'q' characters will not pass through the function and appear at all since there is no equivalent rune.
     + added unit tests to support this new parameter option
-    
+
 ### Deprecated
 
 -

@@ -35,11 +35,6 @@
 #' @export
 runes <- function(x, futhark="elder", branch=NA, hide=FALSE) {
 
-    # TODO add new supporting unit tests
-    # TODO update changelog for all of these changes
-    # TODO update DESCRIPTION with new version.
-    # TODO double check all files and update necessary items
-
     # Make sure that argument data types are what they should be
     if (base::class(x) != base::class("character")) {
         stop("test to be converted is not a string")

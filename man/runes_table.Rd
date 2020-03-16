@@ -4,7 +4,14 @@
 \alias{runes_table}
 \title{runes_table()}
 \usage{
-runes_table()
+runes_table(futhark = "elder", branch = NA)
+}
+\arguments{
+\item{futhark}{which futhark set you'd like, defualts to "elder" and the
+argument must be a string}
+
+\item{branch}{if futhark is "younger" then you must also choose wether you
+would like short or long branch younger futhark}
 }
 \description{
 \code{runes_table()} returns a data.frame with 3 variable text columns.AX

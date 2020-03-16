@@ -32,11 +32,11 @@ runes_table <- function(futhark="elder", branch=NA) {
     }
   }
 
-
+if (futhark == "elder") {
 Unicode <- c(
- "\\u16a6" # Thorisaz
-,"\\u014b" # Inguaz
-,"\\u00ef" # Eiwaz
+"\u16a6" # Thorisaz
+,"\u16dc" # Inguaz
+,"\u16c7" # Eiwaz
 ,"\\u16a8" # Ansuz
 ,"\\u16d2" # Berkano
 ,NA # C
@@ -125,19 +125,202 @@ Character <- c(
   ,NA # X
   ,NA # Y
   ,"\u16c9") # Algiz
+} else if (futhark == "yonuger" && branch == "short") {
+
+Character <- c(
+"\u16a6" # Thorisaz
+,"\u16ad" # Weird acce
+,"\u16c6" # Ansuz
+,"\u16d3" # Berkano
+,NA # C
+,NA # D
+,NA # E
+,"\u16a0" # Fehu
+,NA # G
+,"\u16bd" # Hagalaz
+,"\u16c1" # Isa
+,NA # J
+,"\u16b4" # Kanaz
+,"\u16da" # Laguz
+,"\u16d9" # Manaz
+,"\u16bf" # Nautiz
+,NA # O
+,NA # P
+,NA # Q
+,"\u16b1" # r
+,"\u16e7" # R
+,"\u16cc" # Sowilo
+,"\u16d0" # Tiwaz
+,"\u16a2" # Uruz
+,NA # V
+,NA # W
+,NA # X
+,NA # Y
+,NA # Z
+)
+Unicode <- c(
+   "\\u16a6" # Thorisaz
+  ,"\\u16ad" # Weird acce
+  ,"\\u16c6" # Ansuz
+  ,"\\u16d3" # Berkano
+  ,NA # C
+  ,NA # D
+  ,NA # E
+  ,"\\u16a0" # Fehu
+  ,NA # G
+  ,"\\u16bd" # Hagalaz
+  ,"\\u16c1" # Isa
+  ,NA # J
+  ,"\\u16b4" # Kanaz
+  ,"\\u16da" # Laguz
+  ,"\\u16d9" # Manaz
+  ,"\\u16bf" # Nautiz
+  ,NA # O
+  ,NA # P
+  ,NA # Q
+  ,"\\u16b1" # r
+  ,"\\u16e7" # R
+  ,"\\u16cc" # Sowilo
+  ,"\\u16d0" # Tiwaz
+  ,"\\u16a2" # Uruz
+  ,NA # V
+  ,NA # W
+  ,NA # X
+  ,NA # Y
+  ,NA # Z
+)
+Transcription <- c(
+  "\u16a6" # Thorisaz
+  ,"\u0105" # Weird acce
+  ,"a"
+  ,"b"
+  ,"c"
+  ,"d"
+  ,"e"
+  ,"f"
+  ,"g"
+  ,"h"
+  ,"i"
+  ,"j"
+  ,"k"
+  ,"l"
+  ,"m"
+  ,"n"
+  ,"o"
+  ,"p"
+  ,"q"
+  ,"r"
+  ,"R"
+  ,"s"
+  ,"t"
+  ,"u"
+  ,"v"
+  ,"w"
+  ,"x"
+  ,"y"
+  ,"z"
+)
+} else if (futhark == "younger" && branch == "long") {
+
+Character <- c(
+ "\u16a6" # Thorisaz
+,"\u16ac" # Weird accented A character to differnt Ansuz rune
+,"\u16c5" # Ansuz
+,"\u16d2" # Berkano
+,NA # C
+,NA # D
+,NA # E
+,"\u16a0" # Fehu
+,NA # G
+,"\u16bc" # Hagalaz
+,"\u16c1" # Isa
+,NA # J
+,"\u16b4" # Kanaz
+,"\u16da" # Laguz
+,"\u16d8" # Manaz
+,"\u16be" # Nautiz
+,NA # O
+,NA # P
+,NA # Q
+,"\u16b1" # r
+,"\u16e6" # R
+,"\u16cb" # Sowilo
+,"\u16cf" # Tiwaz
+,"\u16a2" # Uruz
+,NA # V
+,NA # W
+,NA # X
+,NA # Y
+,NA # Z
+)
+
+Unicode <- c(
+   "\\u16a6" # Thorisaz
+  ,"\\u16ac" # Weird accented A character to differnt Ansuz rune
+  ,"\\u16c5" # Ansuz
+  ,"\\u16d2" # Berkano
+  ,NA # C
+  ,NA # D
+  ,NA # E
+  ,"\\u16a0" # Fehu
+  ,NA # G
+  ,"\\u16bc" # Hagalaz
+  ,"\\u16c1" # Isa
+  ,NA # J
+  ,"\\u16b4" # Kanaz
+  ,"\\u16da" # Laguz
+  ,"\\u16d8" # Manaz
+  ,"\\u16be" # Nautiz
+  ,NA # O
+  ,NA # P
+  ,NA # Q
+  ,"\\u16b1" # r
+  ,"\\u16e6" # R
+  ,"\\u16cb" # Sowilo
+  ,"\\u16cf" # Tiwaz
+  ,"\\u16a2" # Uruz
+  ,NA # V
+  ,NA # W
+  ,NA # X
+  ,NA # Y
+  ,NA # Z
+)
+
+Transcription <- c(
+"\u16a6" # Thorisaz
+,"\u0105" # Weird acce
+,"a"
+,"b"
+,"c"
+,"d"
+,"e"
+,"f"
+,"g"
+,"h"
+,"i"
+,"j"
+,"k"
+,"l"
+,"m"
+,"n"
+,"o"
+,"p"
+,"q"
+,"r"
+,"R"
+,"s"
+,"t"
+,"u"
+,"v"
+,"w"
+,"x"
+,"y"
+,"z"
+)
+} # End of IF function
 
 df <- base::data.frame(
   Unicode, Transcription, Character
 )
-
-# TODO add new tables for younger futhark branches
-# TODO add the conditional options for selecting which table you want
-# TODO update changelog for all of these changes
-# TODO update DESCRIPTION with new version.
-# TODO double check all files and update necessary items
-
-
     return(df)
-}
-
-# let is float to the top this need unit test documentation
+} # End Function

@@ -146,6 +146,12 @@ runes <- function(x, futhark="elder", branch=NA, hide=FALSE) {
        output_string <- base::gsub(pattern = "[lL]", x = output_string, replacement = "\u16da")
        output_string <- base::gsub(pattern = "[mM]", x = output_string, replacement = "\u16d9")
        output_string <- base::gsub(pattern = "[nN]", x = output_string, replacement = "\u16bf")
+       output_string <- base::gsub(pattern = "o", x = output_string, replacement = if (hide) {""} else {"o"})
+       output_string <- base::gsub(pattern = "O", x = output_string, replacement = if (hide) {""} else {"O"})
+       output_string <- base::gsub(pattern = "p", x = output_string, replacement = if (hide) {""} else {"p"})
+       output_string <- base::gsub(pattern = "P", x = output_string, replacement = if (hide) {""} else {"P"})
+       output_string <- base::gsub(pattern = "q", x = output_string, replacement = if (hide) {""} else {"q"})
+       output_string <- base::gsub(pattern = "Q", x = output_string, replacement = if (hide) {""} else {"Q"})
        output_string <- base::gsub(pattern = "r", x = output_string, replacement = "\u16b1")
        output_string <- base::gsub(pattern = "R", x = output_string, replacement = "\u16e7")
        output_string <- base::gsub(pattern = "[sS]", x = output_string, replacement = "\u16cc")
@@ -159,8 +165,8 @@ runes <- function(x, futhark="elder", branch=NA, hide=FALSE) {
        output_string <- base::gsub(pattern = "X", x = output_string, replacement = if (hide) {""} else {"X"})
        output_string <- base::gsub(pattern = "y", x = output_string, replacement = if (hide) {""} else {"y"})
        output_string <- base::gsub(pattern = "Y", x = output_string, replacement = if (hide) {""} else {"y"})
-       output_string <- base::gsub(pattern = "v", x = output_string, replacement = if (hide) {""} else {"z"})
-       output_string <- base::gsub(pattern = "V", x = output_string, replacement = if (hide) {""} else {"Z"})
+       output_string <- base::gsub(pattern = "z", x = output_string, replacement = if (hide) {""} else {"z"})
+       output_string <- base::gsub(pattern = "Z", x = output_string, replacement = if (hide) {""} else {"Z"})
 
    }
 

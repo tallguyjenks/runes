@@ -54,9 +54,6 @@ runes <- function(x, futhark="elder", branch=NA, hide=FALSE) {
 
     input_string <- x
 
-    # Make sure that arguement for rune set is case insensitive
-    futhark <- base::tolower(futhark)
-
    # Begin Conditional Translation Sections
    if (futhark == "elder") {
 

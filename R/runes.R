@@ -43,12 +43,17 @@ runes <- function(x, futhark="elder", branch=NA, hide=FALSE) {
     # Make sure that argument data types are what they should be
     if (base::class(x) != base::class("character")) {
         stop("test to be converted is not a string")
-    } else if (base::class(futhark) != base::class("character")) {
+    }
+    if (base::class(futhark) != base::class("character")) {
         stop("futhark name is not a string")
-    } else if (base::class(hide) != base::class(TRUE)) {
+    }
+    if (base::class(hide) != base::class(TRUE)) {
         stop("Hide option is not a boolean TRUE or FALSE")
-    } else if (base::class(branch) != class("Character") || is.na(branch)) {
-        stop("Your branch option is not a string 'short' or 'long'")
+    }
+    if (futhark == "younger") {
+        if (base::class(branch) != class("Character") || is.na(branch)) {
+            stop("Your branch option is not a string 'short' or 'long'")
+        }
     }
 
     input_string <- x

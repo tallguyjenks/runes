@@ -35,7 +35,7 @@ I did not find a package in R that does this so i made it myself, so if you work
 install.packages("runes")
 
 # OR for the development version:
-devtools::install_github("tallguyjenks/runes")
+remotes::install_github("tallguyjenks/runes")
 ```
 
 ## Usage

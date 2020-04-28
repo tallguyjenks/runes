@@ -8,7 +8,6 @@
 ## R CMD check results
 
 * There were no ERRORs, NOTEs, or WARNINGs. 
-* win-builder note = "checking CRAN incoming feasibility"
 * Also in win-builder noted spelling issue in DESCRIPTION, _Futhark_ is the correct spelling.
 * R-Hub only NOTE was new submission and same spelling flag for _Futhark_
 

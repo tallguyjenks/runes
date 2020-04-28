@@ -61,7 +61,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -
 
-## [0.1.0] - 2020-03-15
+## [0.1.0] - 2020-04-28
 
 ### Added
 
@@ -75,7 +75,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Added new function options to `runes()` it will now accept a new arguement "futhark" which defaults to "elder" to maintain prior functionality but now different futhark rune sets can be chosen such as younger futhark
-- fixed character conversion for the elder furthark set, some conversions like nh for inguaz are actually linked to a unicode character not a dual character ascii 'ng', the same goes for 'th' which is the thorisaz runes and now requires the unicode character to be translated into that character again where as 'th' will translate to Tiwaz and Hagalaz
+- fixed character conversion for the elder furthark set, some conversions like ng for inguaz are actually linked to a unicode character not a dual character ascii 'ng', the same goes for 'th' which is the thorisaz runes and now requires the unicode character to be translated into that character again where as 'th' will translate to Tiwaz and Hagalaz
 
 ### Deprecated
 
@@ -84,6 +84,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 
 - Removed the internal `tolower()` functionality as some rune sets have case sensitive conversions and with regex the case wont matter for the other sets if [aA] is used for 'A' in the elder sets
+- Redundant and superflous unit tests
 
 ### Fixed
 

@@ -1,16 +1,3 @@
-
-## Resubmission
-
-This is a resubmission. In this version I have:
-
-* **DESCRIPTION**
-    - Edited the licence line of my `DESCRIPTION` file to be _MIT + file LICENSE_ in the requested 2 line format
-    - added a _BugReports_ field to the `DESCRIPTION` linking to the GitHub repo for this package
-    - Added an external link in the _Description_ field in the `DECRIPTION` document linking to the wikipedia article on what elder futhark runes are (old Germanic runes from the 2nd - 8th centuries that roghly cover most of the English alphabet)
-    
-* **LICENSE**
-    -  Edited the `LICENSE` file to be the two lines of _YEAR_ and _COPYRIGHT HOLDER_
-
 ## Test environments
 
 * Arch Linux x86_64
@@ -28,7 +15,3 @@ This is a resubmission. In this version I have:
 ## Downstream dependencies
 
 There are currently no downstream dependencies for this package.
-
-## Submission Note
-
-This is my first submission / First CRAN submission

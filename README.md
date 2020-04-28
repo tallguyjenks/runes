@@ -56,7 +56,7 @@ If you want a complete translation table of unicode sequence --> English Transcr
 
 ## How to Contribute
 
-1. Read <a target="_blank" href="./CONTRIBUTING.md">CONTRIBUTING.md</a>
+1. Read <a target="_blank" href="./CONTRIBUTING.md">CONTRIBUTING</a>
 2. Clone repository and create a new branch.
 3. Make changes and test
 4. Submit Pull Request with comprehensive description of changes

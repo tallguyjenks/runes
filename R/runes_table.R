@@ -4,10 +4,10 @@
 #' @description
 #' `runes_table()` returns a data.frame with 3 variable text columns.AX
 #'
-#' @param futhark which futhark set you'd like, defualts to "elder" and the
+#' @param futhark which futhark set you'd like, defaults to "elder" and the
 #' argument must be a string
 #'
-#' @param branch if futhark is "younger" then you must also choose wether you
+#' @param branch if futhark is "younger" then you must also choose whether you
 #' would like short or long branch younger futhark
 #'
 #' @details

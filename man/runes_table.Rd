@@ -7,10 +7,10 @@
 runes_table(futhark = "elder", branch = NA)
 }
 \arguments{
-\item{futhark}{which futhark set you'd like, defualts to "elder" and the
+\item{futhark}{which futhark set you'd like, defaults to "elder" and the
 argument must be a string}
 
-\item{branch}{if futhark is "younger" then you must also choose wether you
+\item{branch}{if futhark is "younger" then you must also choose whether you
 would like short or long branch younger futhark}
 }
 \description{

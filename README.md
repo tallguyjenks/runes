@@ -12,7 +12,7 @@ runes - ᚱᚢᚾᛖᛋ <img src="img/tinyhex.png" align="right">
 [![](http://cranlogs.r-pkg.org/badges/last-month/runes?color=blue)](https://cran.r-project.org/package=runes)
 [![](http://cranlogs.r-pkg.org/badges/last-week/runes?color=blue)](https://cran.r-project.org/package=runes)
 
-[![](https://img.shields.io/badge/RDocumentation-0.0.1-blue)](https://www.rdocumentation.org/packages/runes/versions/0.0.1)
+[![](https://img.shields.io/badge/RDocumentation-0.1.0-blue)](https://www.rdocumentation.org/packages/runes/versions/0.1.0)
 [![DOI](https://zenodo.org/badge/235950397.svg)](https://zenodo.org/badge/latestdoi/235950397)
 [![](https://img.shields.io/badge/ORCiD-0000--0002--9604--3069-green)](https://orcid.org/0000-0002-9604-3069)
 

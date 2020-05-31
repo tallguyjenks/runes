@@ -13,7 +13,7 @@ runes - ᚱᚢᚾᛖᛋ <img src="img/tinyhex.png" align="right">
 [![](http://cranlogs.r-pkg.org/badges/last-week/runes?color=blue)](https://cran.r-project.org/package=runes)
 
 [![](https://img.shields.io/badge/RDocumentation-0.1.0-blue)](https://www.rdocumentation.org/packages/runes/versions/0.1.0)
-[![DOI](https://zenodo.org/badge/235950397.svg)](https://zenodo.org/badge/latestdoi/235950397)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3868253.svg)](https://doi.org/10.5281/zenodo.3868253)
 [![](https://img.shields.io/badge/ORCiD-0000--0002--9604--3069-green)](https://orcid.org/0000-0002-9604-3069)
 
 runes is a package to convert English _A-Z_ characters to Runes. There is a LaTeX package to do this with RMarkdown, but why not make it easier and more intuitive to get the runes you need when you need them? `runes("any string or vector here")` works as you'd expect.

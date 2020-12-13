@@ -5,7 +5,9 @@ runes - ᚱᚢᚾᛖᛋ <img src="img/tinyhex.png" align="right">
 > Have you ever wanted Runes in your R Documents? Of course you did! so here's a package that gives you that functionality.
 
 
-[![Build Status](https://travis-ci.org/tallguyjenks/runes.svg?branch=master)](https://travis-ci.org/tallguyjenks/runes)
+<!-- badges: start -->
+[![R build status](https://github.com/tallguyjenks/runes/workflows/R-CMD-check/badge.svg)](https://github.com/tallguyjenks/runes/actions)
+<!-- badges: end -->
 [![CRAN checks](https://cranchecks.info/badges/summary/runes)](https://cran.r-project.org/web/checks/check_results_runes.html)
 [![](https://www.r-pkg.org/badges/version/runes?color=orange)](https://cran.r-project.org/package=runes)
 [![](http://cranlogs.r-pkg.org/badges/grand-total/runes?color=blue)](https://cran.r-project.org/package=runes)
